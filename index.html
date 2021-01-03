@@ -17,7 +17,11 @@
 		<div class="reveal">
 			<div class="slides">
 				<section>
-					<section data-background-color="#23252c" data-background-image="dist/assets/react.gif" data-background-size="650px"></section>
+					<section data-background-color="#23252c" data-background-image="dist/assets/react.gif" data-background-size="650px">
+						<aside class="notes">
+							So here we go, let's start.
+						</aside>
+					</section>
 					<section>
 						<a href="https://reactnative.dev" target="_blank">
 							<img src="dist/assets/react-native-logo.png" style="height: 240px; background: transparent;">
@@ -26,6 +30,9 @@
 						<p>
 							<small>Prepared by <a href="https://github.com/xiiforlearning" target="_blank">xiiforlearning</a> for <a href="https://rs.school/" target="_blank">RS School</a></small>
 						</p>
+						<aside class="notes">
+							Today we gonna talk about React Native. And I prepared some information about it.
+						</aside>
 					</section>
 				</section>
 
@@ -37,19 +44,53 @@
 								<div class="dot"></div>
 							</div>
 						</a>
-						<h3>I want to start with the basics of React</h3>
+						<h3>basics of React</h3>
+						<aside class="notes">
+							Because both React and React Native libraries are developed by the same company, (Facebook) and they're both pretty similar, I want to start with the basics of React, before jumping into React Native.
+						</aside>
 					</section>
 					<section data-background-video="dist/assets/bg-laptop.mp4" data-background-video-loop data-background-video-muted data-background-opacity="0.7">
 						<h3 style="padding: 10px; background-color: rgba(0, 0, 0, 0.3); border-radius: 5px; border: solid 3px white;">How does ReactJS work?</h3>
+						<aside class="notes">
+							So how does ReactJS work?
+
+								Picture this: it’s Friday night, you are coming home from work, tired and want to relax. You're sitting on the couch with a cold one and with your laptop. Before opening Netflix, you check your Facebook feed to see what your friends are doing.
+							
+								While scrolling down your feed, you notice a funny photo of your best friend from their annual company event. You give out a reaction to the photo and write a comment.
+							
+								At this point you are in the midst of writing your comment and you see someone typing a comment at the same time, that comment then pops up, the reactions and likes are increasing. You reply to one of them, you may like another, you get another reply and so on.							
+							
+								All these without needing to refresh the page! This is the work of our good friend - ReactJS.
+						</aside>
 					</section>
 					<section data-transition="zoom">
 						<p>
 							<small>So, how does React know what to display to you and how the work is done under the hood?</small>
 						</p>
 						<h3 class="fragment fade-up">Let’s Dive into It</h3>
+						<aside class="notes">
+							So, how does React know what to display to you and how the work is done under the hood?
+
+							Let’s dive into it
+						</aside>
 					</section>
 					<section data-background-color="#060306" data-transition="zoom">
 						<img src="dist/assets/how-react-works.gif">
+						<aside class="notes">
+							React is a component-based library. This means that the web application is made up of different components. The components are eventually compiled into HTML elements.
+							
+							These components are independent blocks which are linked together to build the entire web application. You can visualize this as a tree, where there is a root component and each of the other components become individual branches which are further divided into sub-branches.
+							
+							This keeps the UI of the application organized and also allows the data and state changes to flow smoothly between the branches.
+
+							Ok, now that you have a rough idea of how React looks like, let’s go back to our example and examine how this library knows what HTML elements to display to the user.
+
+							Let’s say you have written a simple HTML web page in React. This page is transpiled JavaScript output which creates your HTML. Now, let’s say you want to change/add/remove an element in this page and display the change without refreshing the page.
+
+							These changes are not pushed to the DOM directly, but instead to something called Virtual DOM.
+
+							The Virtual DOM is basically just a copy of the real DOM that React makes. So every time you want to change an element, React compares the Virtual DOM to the original DOM. At this point, if there is a difference between the Virtual DOM and the real HTML DOM, the changes are pushed to the real DOM, but only for that specific part of the DOM. The rest remains unchanged.		
+						</aside>
 					</section>
 					<section data-transition="convex">
 						<h3>This is what makes React so fast.</h3>
@@ -59,6 +100,13 @@
 								<div class="dot"></div>
 							</div>
 						</a>
+						<aside class="notes">
+							This is what makes React so fast.
+
+							JavaScript is a very fast programming language and is interpreted by the browser almost instantly. The slower part of web development is the render and CSS part. This is why it's faster to keep a copy of the original DOM in the JavaScript code and compare it every time a change is made instead of replacing the entire DOM.
+
+							Replacing this simple page with the elements from the above example with our friend, you can easily understand how Facebook and other applications using React, know how to display dynamic data without refreshing the entire web page.
+						</aside>
 					</section>
 				</section>
 
@@ -83,6 +131,11 @@
 							<li class="fragment fade-left">Learn once, write anywhere.</li>
 							<li class="fragment fade-left">Real world projects typically see <span class="fragment highlight-blue">80% - 95%</span> code reuse</li>
 						</ul>
+						<aside class="notes">
+							React Native is a framework that allows you to build mobile applications, with just JS and it uses the same design principles of React. It’s great because we dont really have to learn a completely new language, we can use most of what we learned in React.
+							It was released in March 2015
+							As we see on the React Native's webpage the motto of the framework is "Learn once, write anywhere". And this is absolutely true, because real world projects show us that we can reuse 80-95% of our code.
+						</aside>
 					</section>
 					<section>
 						<h3>Who's using React Native?</h3>
@@ -102,6 +155,11 @@
 								<li>JD.com</li>
 							</ul>
 						</div>
+						<aside class="notes">
+							So Who's using React Native?
+							There are such a big companies like: ....
+							and so on...
+						</aside>
 					</section>
 				</section>
 
@@ -124,15 +182,35 @@
 						</p>
 						<img src="dist/assets/web-app.png">
 						<h3 class="fragment">But wait...</h3>
+
+						<aside class="notes">
+							The working principles of React Native are the same with React, but instead of targeting the browser, they're targeting mobile apps.
+							So, now that you are an expert in React basics, it should be pretty simple: React Native also manipulates some kind of a DOM, compares it and that’s it. It is changing a mobile app UI, right?
+							But wait... in a mobile app there is no trace of HTML DOM. And we need to make a mobile app, not a website. So we cannot open the mobile device browser (duh!).
+						</aside>
 					</section>
 					<section>
 						<p>
 							<small>React Native runs a background process - a JavaScript thread - in order to communicate with the native platform</small>
 						</p>
 						<img src="dist/assets/bridge-2.jpg" style="height: 500px; border-radius: 10px;">
+						<aside class="notes">
+							That being said, React Native does not manipulate the DOM via the Virtual DOM, instead it runs a background process - a JavaScript thread - in order to communicate with the native platform via a serialized, asynchronous and batched Bridge.
+							
+							To make this easy to understand, check the following image:
+							
+							In the example above, Bill - the awesome React Native developer - is creating a starting screen in his React Native mobile app. It needs to display 2 elements on the page: the React logo and a Login button.
+
+							For this, he writes the code in React Native using the JSX and similar React code structure, but instead of using divs and HTML elements he is using React Native View elements. When the code is compiled, it generates a JavaScript thread which creates a 'bridge' between the React Native render method and the actual iOS/Android native code. Using this bridge, React Native can ask native code to provide the native elements it needs.
+							
+							In this case, React Native is invoking the native rendering API to receive the Image and the Button elements and then it only displays them within the app. The final components that are displayed are the fully-native UI elements. It's not necessary to create a webview and render HTML in it.
+						</aside>
 					</section>
 					<section data-transition="convex">
-						<h3>This is why React Native is so powerful. The final app will look and feel like any other mobile application.</h3>
+						<h3>This is why React Native is so powerful.</h3>
+						<p>
+							<small>The final app will look and feel like any other mobile application.</small>
+						</p>
 						<a href="https://reactnative.dev" target="_blank">
 							<div class="logo" style="height: 240px; background: transparent;">
 								<div class="react"></div>
@@ -157,9 +235,15 @@
 							<small>There are many mobile development options available</small>
 						</p>
 						<img src="dist/assets/mobile-languages.png">
+						<aside class="notes">
+							So why React Native? There are many mobile development options available.
+						</aside>
 					</section>
 					<section data-transition="convex">
 						<img src="dist/assets/ios-android.png">
+						<aside class="notes">
+							but React Native is special in that you can build an app for both IOS and Android at the same time. The “Native” in React Native has a lot of meaning here, in that it refers to the “native” code of the operating system your mobile device is running on, which is code that is the most optimized for your device. The power of react native lies in the ability to use React code to flesh out your application, and then add compatibility to both Android and IOS by adding in their own native features.
+						</aside>
 					</section>
 					<section>
 						<h3>To sum it up</h3>
