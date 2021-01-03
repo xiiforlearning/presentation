@@ -1,0 +1,210 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css" id="theme">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<section data-background-color="#23252c" data-background-image="dist/assets/react.gif" data-background-size="650px"></section>
+					<section>
+						<a href="https://reactnative.dev" target="_blank">
+							<img src="dist/assets/react-native-logo.png" style="height: 240px; background: transparent;">
+						</a>
+						<h3>Presentation</h3>
+						<p>
+							<small>Prepared by <a href="https://github.com/xiiforlearning" target="_blank">xiiforlearning</a> for <a href="https://rs.school/" target="_blank">RS School</a></small>
+						</p>
+					</section>
+				</section>
+
+				<section data-transition="zoom">
+					<section>
+						<a href="https://reactnative.dev" target="_blank">
+							<div class="logo" style="height: 240px; background: transparent;">
+								<div class="react"></div>
+								<div class="dot"></div>
+							</div>
+						</a>
+						<h3>I want to start with the basics of React</h3>
+					</section>
+					<section data-background-video="dist/assets/bg-laptop.mp4" data-background-video-loop data-background-video-muted data-background-opacity="0.7">
+						<h3 style="padding: 10px; background-color: rgba(0, 0, 0, 0.3); border-radius: 5px; border: solid 3px white;">How does ReactJS work?</h3>
+					</section>
+					<section data-transition="zoom">
+						<p>
+							<small>So, how does React know what to display to you and how the work is done under the hood?</small>
+						</p>
+						<h3 class="fragment fade-up">Let’s Dive into It</h3>
+					</section>
+					<section data-background-color="#060306" data-transition="zoom">
+						<img src="dist/assets/how-react-works.gif">
+					</section>
+					<section data-transition="convex">
+						<h3>This is what makes React so fast.</h3>
+						<a href="https://reactnative.dev" target="_blank">
+							<div class="logo" style="height: 240px; background: transparent;">
+								<div class="react"></div>
+								<div class="dot"></div>
+							</div>
+						</a>
+					</section>
+				</section>
+
+				<section data-transition="zoom">
+					<section>
+						<a href="https://reactnative.dev" target="_blank">
+							<div class="logo" style="height: 240px; background: transparent;">
+								<div class="react"></div>
+								<div class="dot"></div>
+							</div>
+						</a>
+						<p>
+							<small>Now that we have settled the basics of React, we can finally jump into the React Native world.</small>
+						</p>
+					</section>
+					<section>
+						<h3>What is react native?</h3>
+						<ul>
+							<li class="fragment fade-left">Built using React</li>
+							<li class="fragment fade-left">Build cross platform applications using <span class="fragment highlight-blue">JavaScript</span></li>
+							<li class="fragment fade-left">Released in <span class="fragment highlight-blue">March 2015</span></li>
+							<li class="fragment fade-left">Learn once, write anywhere.</li>
+							<li class="fragment fade-left">Real world projects typically see <span class="fragment highlight-blue">80% - 95%</span> code reuse</li>
+						</ul>
+					</section>
+					<section>
+						<h3>Who's using React Native?</h3>
+						<div class="r-stack">
+							<img class="fragment fade-in-then-out" src="dist/assets/facebook-logo.png" style="background: white;  height: 200px; padding: 15px; border-radius: 15px;">
+							<img class="fragment fade-in-then-out" src="dist/assets/instagram-logo.png" style="background: white;  height: 200px; padding: 15px; border-radius: 15px;">
+							<img class="fragment fade-in-then-out" src="dist/assets/discord-logo.png" style="height: 200px;">
+							<img class="fragment fade-in-then-out" src="dist/assets/tesla-logo.png" style="background: white; height: 200px; padding: 15px; border-radius: 15px;">
+							<img class="fragment fade-in-then-out" src="dist/assets/skype-logo.png" style="height: 200px; padding: 15px; border-radius: 15px;">
+							<ul class="fragment fade-up">
+								<li>Walmart</li>
+								<li>Airbnb</li>
+								<li>Baidu</li>
+								<li>Adidas</li>
+								<li>Wix</li>
+								<li>Bloomberg</li>
+								<li>JD.com</li>
+							</ul>
+						</div>
+					</section>
+				</section>
+
+				<section data-transition="zoom">
+					<section>
+						<a href="https://reactnative.dev" target="_blank">
+							<div class="logo" style="height: 240px; background: transparent;">
+								<div class="react"></div>
+								<div class="dot"></div>
+							</div>
+						</a>
+						<h3>Okay, here we go and we know what the React native is...</h3>
+						<p class="fragment">
+							<small>But how does React Native work?</small>
+						</p>
+					</section>
+					<section>
+						<p>
+							<small>The working principles of React Native are the same with React, but instead of targeting the browser, they're targeting mobile apps.</small>
+						</p>
+						<img src="dist/assets/web-app.png">
+						<h3 class="fragment">But wait...</h3>
+					</section>
+					<section>
+						<p>
+							<small>React Native runs a background process - a JavaScript thread - in order to communicate with the native platform</small>
+						</p>
+						<img src="dist/assets/bridge-2.jpg" style="height: 500px; border-radius: 10px;">
+					</section>
+					<section data-transition="convex">
+						<h3>This is why React Native is so powerful. The final app will look and feel like any other mobile application.</h3>
+						<a href="https://reactnative.dev" target="_blank">
+							<div class="logo" style="height: 240px; background: transparent;">
+								<div class="react"></div>
+								<div class="dot"></div>
+							</div>
+						</a>
+					</section>
+				</section>
+				
+				<section data-transition="zoom">
+					<section>
+						<a href="https://reactnative.dev" target="_blank">
+							<div class="logo" style="height: 240px; background: transparent;">
+								<div class="react"></div>
+								<div class="dot"></div>
+							</div>
+						</a>
+						<h3>So why React Native?</h3>
+					</section>
+					<section>
+						<p>
+							<small>There are many mobile development options available</small>
+						</p>
+						<img src="dist/assets/mobile-languages.png">
+					</section>
+					<section data-transition="convex">
+						<img src="dist/assets/ios-android.png">
+					</section>
+					<section>
+						<h3>To sum it up</h3>
+						<p class="fragment">
+							<small>There are 2 major reasons why we would use react native:</small>
+						</p>
+						<ol>
+							<li class="fragment">We already know React</li>
+							<li class="fragment">React Native is great for putting an application on both IOS and android</li>
+						</ol>
+					</section>
+				</section>
+
+				<section data-transition="zoom">
+					<section data-transition="convex">
+						<a href="https://reactnative.dev" target="_blank">
+							<div class="logo" style="height: 240px; background: transparent;">
+								<div class="react"></div>
+								<div class="dot"></div>
+							</div>
+						</a>
+						<h3>And I think thats all...</h3>
+						<p class="fragment">
+							<small>what I managed to tell you about <a href="https://reactnative.dev" target="_blank">React Native</a></small>
+						</p>
+					</section>
+				</section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+			Reveal.configure({ preloadIframes: true });
+		</script>
+	</body>
+</html>
